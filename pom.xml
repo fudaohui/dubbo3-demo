@@ -20,6 +20,7 @@
         <slf4j-log4j12.version>1.7.25</slf4j-log4j12.version>
         <dubbo.vesion>3.0.4</dubbo.vesion>
         <log4j_version>1.2.16</log4j_version>
+        <spring-boot-maven-plugin.version>2.4.2</spring-boot-maven-plugin.version>
     </properties>
 
     <modules>
@@ -65,13 +66,5 @@
         </dependencies>
     </dependencyManagement>
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
 
 </project>
