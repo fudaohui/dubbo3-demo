@@ -5,6 +5,7 @@ import com.fdh.dubbo3.service.GreeterService;
 import com.fdh.dubbo3.service.HelloReply;
 import com.fdh.dubbo3.service.HelloRequest;
 import org.apache.dubbo.config.annotation.DubboReference;
+import org.apache.dubbo.config.annotation.Reference;
 import org.apache.dubbo.config.spring.context.annotation.EnableDubbo;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -18,7 +19,7 @@ import java.util.concurrent.CountDownLatch;
 @EnableDubbo
 public class Demo3ConsumerApplication {
 
-    @DubboReference
+    @DubboReference(loadbalance = "direct")
     private GreeterService greeterService;
 
     public static void main(String[] args) throws InterruptedException {

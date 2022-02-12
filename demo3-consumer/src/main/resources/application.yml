@@ -30,3 +30,4 @@ dubbo:
   metadata-report:
     address: nacos://10.0.116.191:31079
 
+
